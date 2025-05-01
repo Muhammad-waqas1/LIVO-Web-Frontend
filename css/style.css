@@ -10,12 +10,13 @@
 
 
 /* Ensure no default body overflow issues */
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;  
+    overflow-x: hidden;
     /* prevent page-level horizontal scroll */
-  }
+}
 
 
 /* RESET NAV LINK COLOR */
@@ -45,7 +46,7 @@ html, body {
 }
 
 /* SEARCH BAR */
-.search-bar {
+/* .search-bar {
     background: #FFF;
     box-shadow: var(--shadow);
     border-radius: 63px;
@@ -62,7 +63,122 @@ html, body {
     color: #FFF;
     border-radius: 30px;
     padding: 0 2rem;
+} */
+
+
+
+
+
+
+
+/* Base Search Bar */
+.search-bar {
+    background: #FFF;
+    box-shadow: var(--shadow);
+    border-radius: 63px;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
+
+.search-bar .search-field {
+    flex: 1 1 200px;
+    /* grow, shrink, min-width */
+    max-width: 300px;
+    /* don’t get too wide */
+    /* background: var(--clr-light-bg);
+    border-radius: 50px; */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.search-bar .search-field img {
+    margin-right: 0.5rem;
+    width: 20px;
+    height: auto;
+}
+
+.search-bar .search-field input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    color: var(--clr-dark);
+}
+
+.search-bar .search-field input::placeholder {
+    color: var(--clr-gray);
+}
+
+.btn-search {
+    flex: 0 0 auto;
+    background: var(--clr-dark);
+    color: #FFF;
+    border-radius: 30px;
+    padding: 0 2rem;
+    height: 50px;
+    border: none;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.btn-search:hover {
+    /* background: #FFF; */
+    color: #FFF;
+    background-color: #2f4947;
+}
+
+/* Small screens: stack vertically */
+@media (max-width: 767px) {
+    .search-bar .search-field {
+        flex: none;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+        border-radius: 40px;
+        padding: 0.8rem;
+    }
+
+    .search-bar .search-field,
+    .btn-search {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .btn-search {
+        margin-top: 0.5rem;
+    }
+}
+
+/* Extra-small screens: slightly larger inputs */
+@media (max-width: 480px) {
+    .search-bar .search-field {
+        padding: 0 0.75rem;
+    }
+
+    .search-bar .search-field input {
+        font-size: 0.9rem;
+    }
+
+    .btn-search {
+        padding: 0 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 /* HERO */
 .hero-section {
@@ -209,7 +325,13 @@ html, body {
 
 
 
-
+.card-title {
+    font-size: 1.25rem;
+    text-decoration: none;
+    margin-top: 0;
+    font-weight: 500;
+    line-height: 1.2;
+}
 
 
 /* card sizing, rounding, shadow */

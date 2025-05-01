@@ -353,6 +353,412 @@ ul.session-nav.nav .nav-link {
 
 
 
+
+
+/* Detail card */
+#detail-card {
+    flex: 1 1 647px;
+    background: #fff;
+    border-radius: 6.337px;
+    box-shadow: 0 2.535px 50.693px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    display: none;
+}
+
+#detail-card img.main-img {
+    width: 747px;
+    height: 309px;
+    /* width: 100%; */
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+#detail-card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#detail-card .header h5 {
+    margin: 0;
+}
+
+#detail-card .header .rating {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 600;
+}
+
+#detail-card .header .rating img {
+    width: 16px;
+}
+
+#detail-card .meta {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    color: #6c757d;
+}
+
+#detail-card .meta div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+#detail-card .meta img {
+    width: 20px;
+}
+
+#detail-card .description,
+#detail-card .benefits {
+    margin-bottom: 1rem;
+}
+
+#detail-card h6 {
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+#detail-card .actions {
+    display: flex;
+    gap: 1rem;
+}
+
+#detail-card .actions .btn {
+    /* padding: .5rem 1.5rem; */
+    width: 72.504px;
+    height: 60.447px;
+    flex-shrink: 0;
+    border-radius: 19.01px;
+    border: none;
+    background: #DDEAE7;
+}
+
+#detail-card .actions .btn-primary {
+    border-radius: 30px;
+    background: #355350;
+    border: none;
+    color: #fff;
+    display: flex;
+    width: 217.512px;
+    height: 60.447px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+
+
+/* Right: Info card */
+.info-card {
+    flex: 0 0 430px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+}
+
+@media (max-width:1100px) {
+    .sessions-container {
+        flex-direction: column;
+    }
+
+    .session-list,
+    #detail-card,
+    .info-card {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+
+
+.cardwellth {
+    padding: 0.7rem;
+}
+
+
+.date-pill.more img {
+    width: 20px;
+    /* or whatever your icon size is */
+    height: auto;
+}
+
+/* Once selected, custom pill matches others */
+.date-pill.selected {
+    background: #355350;
+    color: white;
+}
+
+
+/* Anchor the calendar to the right-center of the pill */
+.flatpickr-calendar {
+    position: absolute !important;
+    /* adjust these offsets to taste: */
+    transform: translate(calc(100% + 250px), 70px) !important;
+    /* makes sure it layers on top */
+    z-index: 2000 !important;
+}
+
+@media (max-width: 490px) {
+
+    .flatpickr-calendar {
+        transform: translate(calc(100% - 270px), 70px) !important;
+
+    }
+}
+
+
+
+.info-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    position: relative;
+}
+
+.info-header {
+    transition: .3s;
+}
+
+.cardwellth {
+    /* background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 130px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: height .3s ease; */
+
+
+    position: relative;
+    width: 100%;
+    max-width: 738.721px;
+    height: auto;
+    min-height: 123.143px;
+    background: #fff;
+    border-radius: 16.282px;
+    box-shadow: 0px 6.513px 130.253px rgba(0, 0, 0, 0.08);
+    padding: 1rem 1.5rem;
+}
+
+.btn-add {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+/* Expanded card styles */
+/* .cardwellth.expanded {
+    border-radius: 10px;
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+} */
+
+/* 
+  .expanded-panel {
+    display: none;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 80px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    font-family: Inter, sans-serif;
+  }
+
+  .expanded-panel h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  } 
+*/
+
+.meta-row {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+    color: #495057;
+    margin-bottom: 1.5rem;
+}
+
+.meta-row img {
+    width: 16px;
+    height: 16px;
+}
+
+.section-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Date selector pills */
+.date-selector {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.date-pill {
+    flex: 1 1 50px;
+    max-width: 70px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 0.5rem 0.25rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.date-pill.selected {
+    background: #355350;
+    color: #fff;
+    box-shadow: none;
+}
+
+.date-pill small {
+    display: block;
+    font-size: 0.75rem;
+}
+
+.date-pill .day {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.date-pill.more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+/* Time list */
+.time-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.time-slot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.time-slot.selected {
+    background: #355350;
+    color: #fff;
+}
+
+.time-slot.selected .slot-info img {
+    filter: brightness(0) invert(1);
+}
+
+.time-slot.selected .slot-info {
+    color: #fff;
+}
+
+.time-slot .slot-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.time-slot .slot-info img {
+    width: 16px;
+    height: 16px;
+}
+
+.time-slot .slot-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+}
+
+.time-slot .badge-discount {
+    background: #A9D2C4;
+    color: #355350;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px 0 0 6px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+.toggle-div {
+    transition: opacity 0.3s;
+}
+
+.toggle-div.hide {
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
+}
+
+
+.Info_actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.Info_actions button {
+    font-weight: bold;
+    border-radius: 30px;
+    background: #355350;
+    border: none;
+    color: #FFF;
+    display: flex;
+    width: 180px;
+    height: 60px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.Info_actions button:nth-child(2) {
+    color: #000;
+    background: #DDEAE7;
+}
+
+.Info_actions button:hover{
+    background: #304b48;
+    color: #FFF;
+}
+
+
 /* ====== TEAM SECTION ====== */
 .team-section .card {
     /* width: 312.27px;
