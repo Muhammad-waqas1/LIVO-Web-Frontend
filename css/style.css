@@ -38,12 +38,99 @@ body {
     border-radius: 8px;
 }
 
-.avatar {
+.avatar_Profile {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
 }
+
+
+header {
+    border-bottom: 1px solid #ECEFF9;
+}
+
+
+/* ensure the wrapper is the positioning context */
+.avatar-dropdown {
+    position: relative;
+}
+
+/* hide by default */
+.avatar-dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: auto;
+    margin-top: 0.25rem;
+    min-width: 230px;
+    border: none;
+    border-radius: 22px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    font-size: 18px;
+
+}
+
+.avatar-dropdown .dropdown-menu li:hover {
+    /* background-color: #838383; */
+    border-radius: 12px;
+
+}
+
+
+/* show when JS toggles the class */
+.avatar-dropdown.show-menu .dropdown-menu {
+    display: block;
+}
+
+
+
+/* 1) Rounded corners on hover */
+.avatar-dropdown .dropdown-item {
+    transition: border-radius 0.2s, background-color 0.2s;
+    margin-bottom: 7px;
+}
+
+.avatar-dropdown .dropdown-item:hover {
+    border-radius: 11px;
+    /* adjust as desired */
+}
+
+/* 2) Custom “active” (click) color */
+/* override Bootstrap’s default .active/.focus styling */
+.avatar-dropdown .dropdown-item:active,
+.avatar-dropdown .dropdown-item.active,
+.avatar-dropdown .dropdown-item:focus {
+    background-color: #365350 !important;
+    /* your custom color */
+    color: #fff !important;
+    /* ensure text contrast */
+    box-shadow: none;
+    /* remove default focus ring if you want */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .lead.me-4 {
+        display: none;
+    }
+
+    /* etc… */
+}
+
+
+
+
+
+
+
+
+
+
 
 /* SEARCH BAR */
 /* .search-bar {
@@ -209,7 +296,7 @@ body {
 .hero-text {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 13%;
     transform: translateY(-50%);
 }
 
@@ -258,6 +345,7 @@ body {
 
 /* CATEGORIES */
 .categories .cat-item {
+    text-decoration: none;
     display: inline-flex;
     flex-direction: column;
     align-items: center;

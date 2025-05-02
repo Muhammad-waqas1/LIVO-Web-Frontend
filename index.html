@@ -10,25 +10,41 @@
 </head>
 
 <body>
+
     <!-- NAVBAR -->
-    <header class="container py-4">
+    <header class="px-5 py-3 ">
         <div class="d-flex align-items-center justify-content-between">
-            <!-- Logo (inline SVG) -->
+            <!-- Logo -->
             <div class="logo">
-                <!-- paste your SVG here -->
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="92" height="31" viewBox="0 0 92 31" fill="none">…</svg> -->
-                <img src="assets/images/LIVO_Logo.png" alt="Logo" width="92" height="31" viewBox="0 0 92 31"
-                    fill="none">
+                <img src="assets/images/LIVO_Logo.png" alt="Logo" width="92" height="31">
             </div>
+
             <div class="d-flex align-items-center">
-                <!-- grey square placeholder -->
+                <!-- Cart Icon -->
                 <div class="lead me-4"><i class="bi bi-bag-heart"></i></div>
-                <!-- <a href="#" class="me-4 nav-link">list your facility</a> -->
-                <!-- hamburger + avatar -->
-                <button class="btn btn-lg p-0 me-2 ">
-                    <span class="navbar-toggler-icon text-dark"><i class="bi bi-list"></i></span>
+
+                <!-- Hamburger (optional) -->
+                <button class="btn btn-lg p-0 me-2 d-md-none" id="navToggle">
+                    <i class="bi bi-list fs-3"></i>
                 </button>
-                <img src="assets/images/avatar.png" alt="User" class="avatar" />
+
+                <!-- Avatar & Dropdown wrapper -->
+                <div class="avatar-dropdown position-relative">
+                    <button id="avatarBtn" class="btn p-0 border-0">
+                        <img src="assets/images/avatar.png" alt="User avatar" class="avatar_Profile rounded-circle">
+                    </button>
+                    <ul id="avatarMenu" class="dropdown-menu">
+                        <li><a class="dropdown-item fw-medium" href="#">Sign up</a></li>
+                        <li><a class="dropdown-item" href="#">Log in</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Points</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Invite friends</a></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </header>
@@ -63,7 +79,7 @@
         <!-- <img src="assets/images/hero-bg.png" alt="Hero" class="w-100 hero-img" /> -->
 
 
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1279" height="348"
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1150" height="348"
             viewBox="0 0 1279 348" fill="none">
             <path
                 d="M0 50.1228C0 35.2143 11.6072 22.8918 26.4918 22.0472C118.166 16.8456 427.914 0.222927 640.452 0.349494C850.181 0.474389 1160.53 16.9298 1252.38 22.0683C1267.27 22.9016 1278.9 35.2295 1278.9 50.1486V302.817C1278.9 317.871 1267.1 330.261 1252.06 330.925C1159.89 334.995 850.517 347.933 641.179 347.964C429.518 347.996 119.157 335.009 26.8427 330.927C11.8045 330.262 0 317.872 0 302.82V50.1228Z"
@@ -112,7 +128,7 @@
                 <h3>Morning Special!</h3>
                 <h1>Get 20% Off</h1>
                 <h5>On All Ice bath 9–10 AM</h5>
-                <button class="btn btn-book">Book Now</button>
+                <a href="Wellth.html" class="btn btn-book">Book Now</a>
             </div>
         </div>
     </section>
@@ -121,50 +137,50 @@
     <section class="categories mb-5">
         <div class="d-flex justify-content-center align-items-center flex-wrap" style="gap: 50px;">
             <!-- example: -->
-            <div class="cat-item selected">
+            <a href="Wellth.html" class="cat-item selected">
                 <img src="assets/icons/Frame 1.svg" alt="All" />
                 <span>All</span>
-            </div>
-            <div class="cat-item">
+            </a>
+            <a href="Wellth.html" class="cat-item">
                 <img src="assets/icons/Frame 2.svg" alt="Longevity" />
                 <span>Longevity</span>
-            </div>
-            <div class="cat-item">
+            </a>
+            <a href="Wellth.html" class="cat-item">
                 <img src="assets/icons/Frame 3.svg" alt="Detox" />
                 <span>Detox</span>
-            </div>
-            <div class="cat-item">
+            </a>
+            <a href="Wellth.html" class="cat-item">
                 <img src="assets/icons/Frame 4.svg" alt="Recovery" />
                 <span>Recovery</span>
-            </div>
-            <div class="cat-item">
+            </a>
+            <a href="Wellth.html" class="cat-item">
                 <img src="assets/icons/Frame 5.svg" alt="Brain" />
                 <span>Brain</span>
-            </div>
-            <div class="cat-item">
+            </a>
+            <a href="Wellth.html" class="cat-item">
                 <img src="assets/icons/Frame 6.svg" alt="Energy" />
                 <span>Energy</span>
-            </div>
-            <div class="cat-item">
+            </a>
+            <a href="Wellth.html" class="cat-item">
                 <img src="assets/icons/Frame 7.svg" alt="Skin" />
                 <span>Skin</span>
-            </div>
-            <div class="cat-item">
+            </a>
+            <a href="Wellth.html" class="cat-item">
                 <img src="assets/icons/Frame 8.svg" alt="Sleep" />
                 <span>Sleep</span>
-            </div>
-            <div class="cat-item">
+            </a>
+            <a href="Wellth.html" class="cat-item">
                 <img src="assets/icons/Frame 9.svg" alt="Nutrition" />
                 <span>Nutrition</span>
-            </div>
-            <div class="cat-item">
+            </a>
+            <a href="Wellth.html" class="cat-item">
                 <img src="assets/icons/Frame 10.svg" alt="Mean Health" />
                 <span>Mean Health</span>
-            </div>
-            <div class="cat-item">
+            </a>
+            <a href="Wellth.html" class="cat-item">
                 <img src="assets/icons/Frame 11.svg" alt="Women Health" />
                 <span>Women Health</span>
-            </div>
+            </a>
 
             <!-- repeat for each… -->
         </div>
@@ -1274,98 +1290,106 @@
                 <!-- repeat this col for each facility -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100 custom-card_facility shadow-sm">
-                        <a href="Wellth.html" class="position-relative">
-                            <img src="assets/images/facilities1.png" class="card-img_facility" alt="Facility name">
+                        <div class="position-relative">
+                            <a href="Wellth.html"> <img src="assets/images/facilities1.png" class="card-img_facility"
+                                    alt="Facility name">
+                            </a>
                             <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2">
                                 <i class="bi bi-heart"></i>
                             </button>
-                    </div>
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-1">
-                            <h5 class="card-title mb-1">Weilith</h5>
-                            <p class="mb-2">
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <span class="fw-bold">5.0</span> <small class="text-muted">(312)</small>
-                            </p>
                         </div>
-                        <p class="text-muted fw-medium mb-2"><i class="bi bi-geo-alt-fill"></i> Dubai, UAE</p>
-                        <p class="mb-0" style="color: #6E6A6A;">Find your inner peace and clarity with guided
-                            meditation…</p>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <a href="Wellth.html" class="card-title mb-1">Wellth</a>
+                                <p class="mb-2">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <span class="fw-bold">5.0</span> <small class="text-muted">(312)</small>
+                                </p>
+                            </div>
+                            <p class="text-muted fw-medium mb-2"><i class="bi bi-geo-alt-fill"></i> Dubai, UAE</p>
+                            <p class="mb-0" style="color: #6E6A6A;">Find your inner peace and clarity with guided
+                                meditation…</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card h-100 custom-card_facility shadow-sm">
-                    <a href="Wellth.html" class="position-relative">
-                        <img src="assets/images/facilities0.png" class="card-img_facility" alt="Facility name">
-                        <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2">
-                            <i class="bi bi-heart"></i>
-                        </button>
-                </div>
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center mb-1">
-                        <h5 class="card-title mb-1">Weilith</h5>
-                        <p class="mb-2">
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <span class="fw-bold">5.0</span> <small class="text-muted">(312)</small>
-                        </p>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 custom-card_facility shadow-sm">
+                        <div class="position-relative">
+                            <a href="Wellth.html"> <img src="assets/images/facilities0.png" class="card-img_facility"
+                                    alt="Facility name">
+                            </a>
+                            <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <a href="Wellth.html" class="card-title mb-1">Wellth</a>
+                                <p class="mb-2">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <span class="fw-bold">5.0</span> <small class="text-muted">(312)</small>
+                                </p>
+                            </div>
+                            <p class="text-muted fw-medium mb-2"><i class="bi bi-geo-alt-fill"></i> Dubai, UAE</p>
+                            <p class="mb-0" style="color: #6E6A6A;">Find your inner peace and clarity with guided
+                                meditation…</p>
+                        </div>
                     </div>
-                    <p class="text-muted fw-medium mb-2"><i class="bi bi-geo-alt-fill"></i> Dubai, UAE</p>
-                    <p class="mb-0" style="color: #6E6A6A;">Find your inner peace and clarity with guided
-                        meditation…</p>
                 </div>
-            </div>
-        </div>
-        <!-- repeat this col for each facility -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100 custom-card_facility shadow-sm">
-                <a href="Wellth.html" class="position-relative">
-                    <img src="assets/images/facilities1.png" class="card-img_facility" alt="Facility name">
-                    <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2">
-                        <i class="bi bi-heart"></i>
-                    </button>
-            </div>
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center mb-1">
-                    <h5 class="card-title mb-1">Weilith</h5>
-                    <p class="mb-2">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <span class="fw-bold">5.0</span> <small class="text-muted">(312)</small>
-                    </p>
+                <!-- repeat this col for each facility -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 custom-card_facility shadow-sm">
+                        <div class="position-relative">
+                            <a href="Wellth.html"> <img src="assets/images/facilities1.png" class="card-img_facility"
+                                    alt="Facility name">
+                            </a>
+                            <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <a href="Wellth.html" class="card-title mb-1">Wellth</a>
+                                <p class="mb-2">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <span class="fw-bold">5.0</span> <small class="text-muted">(312)</small>
+                                </p>
+                            </div>
+                            <p class="text-muted fw-medium mb-2"><i class="bi bi-geo-alt-fill"></i> Dubai, UAE</p>
+                            <p class="mb-0" style="color: #6E6A6A;">Find your inner peace and clarity with guided
+                                meditation…</p>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-muted fw-medium mb-2"><i class="bi bi-geo-alt-fill"></i> Dubai, UAE</p>
-                <p class="mb-0" style="color: #6E6A6A;">Find your inner peace and clarity with guided
-                    meditation…</p>
-            </div>
-        </div>
-        </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100 custom-card_facility shadow-sm">
-                <a href="Wellth.html" class="position-relative">
-                    <img src="assets/images/facilities0.png" class="card-img_facility" alt="Facility name">
-                    <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2">
-                        <i class="bi bi-heart"></i>
-                    </button>
-            </div>
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center mb-1">
-                    <h5 class="card-title mb-1">Weilith</h5>
-                    <p class="mb-2">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <span class="fw-bold">5.0</span> <small class="text-muted">(312)</small>
-                    </p>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 custom-card_facility shadow-sm">
+                        <div class="position-relative">
+                            <a href="Wellth.html"> <img src="assets/images/facilities0.png" class="card-img_facility"
+                                    alt="Facility name">
+                            </a>
+                            <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <a href="Wellth.html" class="card-title mb-1">Wellth</a>
+                                <p class="mb-2">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <span class="fw-bold">5.0</span> <small class="text-muted">(312)</small>
+                                </p>
+                            </div>
+                            <p class="text-muted fw-medium mb-2"><i class="bi bi-geo-alt-fill"></i> Dubai, UAE</p>
+                            <p class="mb-0" style="color: #6E6A6A;">Find your inner peace and clarity with guided
+                                meditation…</p>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-muted fw-medium mb-2"><i class="bi bi-geo-alt-fill"></i> Dubai, UAE</p>
-                <p class="mb-0" style="color: #6E6A6A;">Find your inner peace and clarity with guided
-                    meditation…</p>
+                <!-- /facility repeat -->
+                <!-- … duplicate the above .col for each of the 4–5 facility cards … -->
             </div>
-        </div>
-        </div>
-        <!-- /facility repeat -->
-        <!-- … duplicate the above .col for each of the 4–5 facility cards … -->
-        </div>
         </div>
     </section>
 

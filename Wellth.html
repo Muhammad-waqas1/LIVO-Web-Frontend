@@ -12,27 +12,45 @@
 </head>
 
 <body>
+    
     <!-- NAVBAR -->
-    <header class="container py-4">
+    <header class="px-5 py-3 ">
         <div class="d-flex align-items-center justify-content-between">
-            <!-- Logo (inline SVG) -->
+            <!-- Logo -->
             <div class="logo">
-                <!-- paste your SVG here -->
-                <img src="assets/images/LIVO_Logo.png" alt="Logo" width="92" height="31" viewBox="0 0 92 31"
-                    fill="none">
+                <img src="assets/images/LIVO_Logo.png" alt="Logo" width="92" height="31">
             </div>
+
             <div class="d-flex align-items-center">
-                <!-- grey square placeholder -->
+                <!-- Cart Icon -->
                 <div class="lead me-4"><i class="bi bi-bag-heart"></i></div>
-                <!-- <a href="#" class="me-4 nav-link">list your facility</a> -->
-                <!-- hamburger + avatar -->
-                <button class="btn btn-lg p-0 me-2 ">
-                    <span class="navbar-toggler-icon text-dark"><i class="bi bi-list"></i></span>
+
+                <!-- Hamburger (optional) -->
+                <button class="btn btn-lg p-0 me-2 d-md-none" id="navToggle">
+                    <i class="bi bi-list fs-3"></i>
                 </button>
-                <img src="assets/images/avatar.png" alt="User" class="avatar" />
+
+                <!-- Avatar & Dropdown wrapper -->
+                <div class="avatar-dropdown position-relative">
+                    <button id="avatarBtn" class="btn p-0 border-0">
+                        <img src="assets/images/avatar.png" alt="User avatar" class="avatar_Profile rounded-circle">
+                    </button>
+                    <ul id="avatarMenu" class="dropdown-menu">
+                        <li><a class="dropdown-item fw-medium" href="#">Sign up</a></li>
+                        <li><a class="dropdown-item" href="#">Log in</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Points</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Invite friends</a></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </header>
+
 
     <!-- SEARCH BAR -->
     <section class="search-section mb-5 mt-4">
@@ -1064,7 +1082,7 @@
                     cardwellth_Expand_ID.classList.remove('hide');
                     Info_actions_button1.disabled = false;
                     Info_actions_button2.disabled = false;
-                    
+
                 } else {
                     // hide #2, show #1
                     cardwellth_Expand_ID.classList.add('hide');
