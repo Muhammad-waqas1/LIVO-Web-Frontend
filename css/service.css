@@ -1,0 +1,82 @@
+/* Top “visit type” pills */
+.first-visit-btn,
+.revisit-btn {
+    border: 1px solid #355350;
+    color: #355350;
+    background: transparent;
+    transition: background .2s, color .2s;
+}
+
+.first-visit-btn:hover,
+.revisit-btn:hover {
+    background: #DDEAE7;
+    color: #000;
+}
+
+.first-visit-btn.active,
+.revisit-btn.active {
+    background: #355350;
+    color: #fff;
+}
+
+/* Radio checked color */
+.form-check-input:checked {
+    background-color: #355350;
+    border-color: #355350;
+}
+
+
+
+/* Brand radio color */
+.form-check-input:checked {
+    background-color: #355350;
+    border-color: #355350;
+}
+
+/* Card style */
+.wellness-card {
+    /* max-width: 720px;
+    margin: 2rem auto; */
+    padding: 2rem;
+    /* background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); */
+}
+
+/* Signature box */
+.signature-container {
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    position: relative;
+    height: 200px;
+    touch-action: none;
+    /* allow touch drawing */
+}
+
+.signature-container canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.clear-signature {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    z-index: 10;
+}
+
+
+
+.btn-continue {
+    background-color: #355350;
+    color: #fff;
+    border-radius: 50px;
+    padding: 0.6rem 1.5rem;
+    transition: background .2s;
+    text-decoration: none;
+}
+
+.btn-continue:hover {
+    background-color: #2a3f3d;
+    color: #fff;
+}

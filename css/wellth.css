@@ -224,7 +224,7 @@ ul.session-nav.nav .nav-link {
 /* Container flex */
 .sessions-container {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 26.89px;
     margin-top: 2rem;
 }
@@ -425,6 +425,7 @@ ul.session-nav.nav .nav-link {
 
 #detail-card .actions {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -514,6 +515,7 @@ ul.session-nav.nav .nav-link {
 
     }
 }
+
 @media (max-width: 750px) {
 
     .flatpickr-calendar {
@@ -555,7 +557,11 @@ ul.session-nav.nav .nav-link {
     background: #fff;
     border-radius: 16.282px;
     box-shadow: 0px 6.513px 130.253px rgba(0, 0, 0, 0.08);
-    padding: 1rem 1.5rem;
+    padding: 0.9rem;
+}
+
+.cardwellth p {
+    font-size: 0.9rem;
 }
 
 .btn-add {
@@ -755,16 +761,33 @@ ul.session-nav.nav .nav-link {
     align-items: center;
     gap: 10px;
 }
+
 .Info_actions button:nth-child(2) {
     color: #000;
     background: #DDEAE7;
 }
 
-.Info_actions button:hover{
+.Info_actions button:hover {
     background: #304b48;
     color: #FFF;
 }
 
+
+#Info_actions_button1 {
+    font-weight: bold;
+    border-radius: 30px;
+    background: #355350;
+    border: none;
+    color: #FFF;
+    display: flex;
+    width: 180px;
+    height: 60px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
 
 /* ====== TEAM SECTION ====== */
 .team-section .card {
