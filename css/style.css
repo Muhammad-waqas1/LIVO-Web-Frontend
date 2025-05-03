@@ -264,9 +264,6 @@ header {
 
 
 
-
-
-
 /* HERO */
 .hero-section {
     display: flex;
@@ -324,13 +321,12 @@ header {
     background: #FFF;
     color: var(--clr-dark);
     border-radius: 16.846px;
-    width: 310px;
-    height: 67px;
+    width: 223px;
+    height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--h-1-h-2-h-3, #0B0C15);
-
     font-size: 25.269px;
     font-style: normal;
     font-weight: 500;
@@ -353,6 +349,7 @@ header {
     /* gap: 50px; */
     cursor: pointer;
     color: var(--clr-gray);
+    font-size: 18px;
 }
 
 .categories .cat-item.selected {
@@ -372,8 +369,255 @@ header {
     overflow: hidden;
 }
 
+
+
+.date-pill.more img {
+    width: 20px;
+    height: auto;
+}
+
+
+.date-pill.selected {
+    background: #355350;
+    color: white;
+}
+
+
+/* calendar to the right-center */
+.flatpickr-calendar {
+    position: absolute !important;
+    transform: translate(calc(100% + 250px), 70px) !important;
+    z-index: 2000 !important;
+}
+
+@media (max-width: 890px) {
+
+    .flatpickr-calendar {
+        transform: translate(calc(100% + 50px), 70px) !important;
+
+    }
+}
+@media (max-width: 750px) {
+
+    .flatpickr-calendar {
+        transform: translate(calc(100% - 270px), 70px) !important;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+#cardwellth_home_ID {
+    display: none;
+    position: fixed;
+    top: 0%;
+    right: 1%;
+    /* width: 100%; */
+    max-width: 738.721px;
+    height: auto;
+    min-height: 123.143px;
+    background: #fff;
+    border-radius: 16.282px;
+    /* box-shadow: 0px 6.513px 130.253px rgba(0, 0, 0, 0.08); */
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 1rem 1.5rem;
+    z-index: 111;
+}
+
+.expanded-panel_home_ID {
+    display: none;
+}
+
+.expanded-panel_home_ID.open {
+    display: block;
+}
+
+
+.meta-row {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+    color: #495057;
+    margin-bottom: 1.5rem;
+}
+
+.meta-row img {
+    width: 16px;
+    height: 16px;
+}
+
+.section-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Date selector pills */
+.date-selector {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.date-pill {
+    flex: 1 1 50px;
+    max-width: 70px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 0.5rem 0.25rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.date-pill.selected {
+    background: #355350;
+    color: #fff;
+    box-shadow: none;
+}
+
+.date-pill small {
+    display: block;
+    font-size: 0.75rem;
+}
+
+.date-pill .day {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.date-pill.more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+/* Time list */
+.time-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.time-slot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.time-slot.selected {
+    background: #355350;
+    color: #fff;
+}
+
+.time-slot.selected .slot-info img {
+    filter: brightness(0) invert(1);
+}
+
+.time-slot.selected .slot-info {
+    color: #fff;
+}
+
+.time-slot .slot-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.time-slot .slot-info img {
+    width: 16px;
+    height: 16px;
+}
+
+.time-slot .slot-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+}
+
+.time-slot .badge-discount {
+    background: #A9D2C4;
+    color: #355350;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px 0 0 6px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+
+.Info_actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.Info_actions button, .continue-btn{
+    font-weight: bold;
+    border-radius: 30px;
+    background: #a9d2c4;
+    border: none;
+    color: #000;
+    display: flex;
+    width: 115px;
+    height: 40px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+/* .Info_actions button:nth-child(2) {
+    color: #000;
+    background: #DDEAE7;
+} */
+
+.Info_actions button:hover, .continue-btn:hover {
+    background: #355350;
+    color: #FFF;
+}
+
+
+#cardwellth_home_ID .toggle-div {
+    display: none;
+}
+
+#cardwellth_home_ID .toggle-div.open {
+    display: block;
+}
+
+
+
+
+
+
 .custom-card_facility {
-    width: 304.941px;
+    width: 300px;
     height: 269.804px;
     flex-shrink: 0;
 
@@ -411,6 +655,14 @@ header {
     margin-bottom: .25rem;
 }
 
+.CardRowsAll {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-evenly;
+}
+
 
 
 .card-title {
@@ -426,7 +678,7 @@ header {
 .custom-card {
     max-width: 420px;
     /* width: 400px; */
-    width: 305.534px;
+    width: 300px;
     /* height: 352.168px; */
     flex-shrink: 0;
 
@@ -493,7 +745,19 @@ header {
 
 
 
-
+.btn-add {
+    position: absolute;
+    top: 73%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #000;
+}
 
 
 

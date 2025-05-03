@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LIVO Home</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -69,7 +70,7 @@
                     <img src="assets/icons/clock.svg" alt="" />
                     <input type="time" placeholder="Any Time" />
                 </div>
-                <button class="btn btn-search   me-3">Search</button>
+                <button class="btn btn-search me-3">Search</button>
             </div>
         </div>
     </section>
@@ -126,7 +127,7 @@
         <div class="container hero-text">
             <div class="text-box">
                 <h3>Morning Special!</h3>
-                <h1>Get 20% Off</h1>
+                <h1 class="fw-bold">Get 20% Off</h1>
                 <h5>On All Ice bath 9–10 AM</h5>
                 <a href="Wellth.html" class="btn btn-book">Book Now</a>
             </div>
@@ -134,8 +135,8 @@
     </section>
 
     <!-- CATEGORIES -->
-    <section class="categories mb-5">
-        <div class="d-flex justify-content-center align-items-center flex-wrap" style="gap: 50px;">
+    <section class="categories px-5">
+        <div class="d-flex align-items-center flex-wrap" style="gap: 50px;">
             <!-- example: -->
             <a href="Wellth.html" class="cat-item selected">
                 <img src="assets/icons/Frame 1.svg" alt="All" />
@@ -182,22 +183,126 @@
                 <span>Women Health</span>
             </a>
 
-            <!-- repeat for each… -->
         </div>
     </section>
 
+
+
+
+
+    <div class="cardwellth " id="cardwellth_home_ID">
+
+
+    <!-- Expanded content hidden until .expanded -->
+
+    <div class="expanded-panel toggle-div" id="expanded-panel_home_ID">
+        <h5>Ozone Sauna</h5>
+        <div class="meta-row">
+            <div class="slot-info">
+                <strong>$100</strong>
+            </div>
+            <div class="slot-info">
+                <img src="assets/icons/clock.svg" alt="Clock">
+                <span>20 Mins</span>
+            </div>
+            <button class="btn-add" fdprocessedid="dguv8q">
+                <img src="assets/icons/Arrow_bottom.svg">
+            </button>
+        </div>
+
+        <!-- Date selector -->
+        <div class="section-label">Select Date</div>
+        <div class="date-selector">
+            <div class="date-pill" data-day="Tue Sep 09">
+                <div class="day">TUE</div>
+                <small>Sep 09</small>
+            </div>
+            <div class="date-pill selected" data-day="Wed Sep 10">
+                <div class="day">WED</div>
+                <small>Sep 10</small>
+            </div>
+            <div class="date-pill" data-day="Thu Sep 11">
+                <div class="day">THU</div>
+                <small>Sep 11</small>
+            </div>
+            <div class="date-pill more" id="custom-date-pill">
+                <img src="assets/icons/calendar.svg" alt="More">
+            </div>
+
+            <!-- Hidden native picker (must be outside the pill) -->
+            <input type="text" id="custom-date-input" style="display:none" class="flatpickr-input" readonly="readonly">
+        </div>
+
+        <!-- Time slots -->
+        <div class="section-label">Select Time</div>
+        <div class="time-list">
+            <div class="time-slot selected" data-slot="Saturday Sep, 20 10:00–12:00">
+                <div class="slot-text">
+                    <strong>Saturday</strong>
+                    <small>Sep, 20</small>
+                </div>
+                <div class="slot-info">
+                    <img src="assets/icons/clock.svg" alt="">
+                    <span>10:00 AM – 12:00PM</span>
+                </div>
+                <div class="badge-discount">20% Off</div>
+            </div>
+            <div class="time-slot" data-slot="Saturday Sep, 20 10:00">
+                <div class="slot-text">
+                    <strong>Saturday</strong>
+                    <small>Sep, 20</small>
+                </div>
+                <div class="slot-info">
+                    <img src="assets/icons/clock.svg" alt="">
+                    <span>10:00 AM</span>
+                </div>
+            </div>
+            <div class="time-slot" data-slot="Saturday Sep, 20 11:00">
+                <div class="slot-text">
+                    <strong>Saturday</strong>
+                    <small>Sep, 20</small>
+                </div>
+                <div class="slot-info">
+                    <img src="assets/icons/clock.svg" alt="">
+                    <span>11:00 AM</span>
+                </div>
+            </div>
+            <div class="time-slot" data-slot="Saturday Sep, 20 12:00">
+                <div class="slot-text">
+                    <strong>Saturday</strong>
+                    <small>Sep, 20</small>
+                </div>
+                <div class="slot-info">
+                    <img src="assets/icons/clock.svg" alt="">
+                    <span>12:00 PM</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="Info_actions">
+            <a href="niad.html"class="btn continue-btn">Continue</a>
+            <button class="btn book-later-btn">Book Later</button>
+        </div>
+
+    </div>
+
+    </div>
+
+
+
     <!-- MAIN SERVICES GRID -->
     <!-- ======= Recommended Services ======= -->
-    <section class="py-5">
-        <div class="p-5">
+    <section class="p-5">
+        <div class="">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2 class="h4 mb-0">Recommended Services</h2>
                 <a href="#" class="text-decoration-none text-dark"><img src="assets/icons/location.svg" alt="icon"> View
                     on Map</a>
             </div>
-            <div class="row gx-4 gy-4">
+            <div class="CardRowsAll">
                 <!-- repeat this col for each card -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <!-- Card wrapper -->
                     <div class="card custom-card mx-auto">
                         <!-- image + heart -->
@@ -225,8 +330,9 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-1">
-                                <i class="bi bi-clock me-1"></i>
-                                <small class="text-muted">9AM–10PM, Mon – Sun</small>
+                                <p style="font-size: 12px;" class="text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>9AM–10PM, Mon – Sun
+                                </p>
                                 <div class="avatar-group ms-3">
                                     <img src="assets/images/avatar.png" alt="" class="avatar">
                                     <img src="assets/images/avatar1.jpg" alt="" class="avatar">
@@ -250,8 +356,8 @@
                                             <small class="text-muted">20 Mins</small>
                                         </div>
                                     </div>
-                                    <button class="btn btn-outline-secondary btn-sm align-self-start">
-                                        <i class="bi bi-plus-lg"></i>
+                                    <button class="btn-add button_extend">
+                                        <img src="assets/icons/Add_Icon_Wellth.png" alt="icon" class="img-fluid">
                                     </button>
                                 </div>
                             </div>
@@ -263,7 +369,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <!-- Card wrapper -->
                     <div class="card custom-card mx-auto">
                         <!-- image + heart -->
@@ -291,8 +397,10 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-1">
-                                <i class="bi bi-clock me-1"></i>
-                                <small class="text-muted">9AM–10PM, Mon – Sun</small>
+                                <p style="font-size: 12px;" class="text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>9AM–10PM, Mon – Sun
+                                </p>
+
                                 <div class="avatar-group ms-3">
                                     <img src="assets/images/avatar.png" alt="" class="avatar">
                                     <img src="assets/images/avatar1.jpg" alt="" class="avatar">
@@ -316,8 +424,8 @@
                                             <small class="text-muted">20 Mins</small>
                                         </div>
                                     </div>
-                                    <button class="btn btn-outline-secondary btn-sm align-self-start">
-                                        <i class="bi bi-plus-lg"></i>
+                                    <button class="btn-add button_extend">
+                                        <img src="assets/icons/Add_Icon_Wellth.png" alt="icon" class="img-fluid">
                                     </button>
                                 </div>
                             </div>
@@ -329,7 +437,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <!-- Card wrapper -->
                     <div class="card custom-card mx-auto">
                         <!-- image + heart -->
@@ -357,8 +465,9 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-1">
-                                <i class="bi bi-clock me-1"></i>
-                                <small class="text-muted">9AM–10PM, Mon – Sun</small>
+                                <p style="font-size: 12px;" class="text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>9AM–10PM, Mon – Sun
+                                </p>
                                 <div class="avatar-group ms-3">
                                     <img src="assets/images/avatar.png" alt="" class="avatar">
                                     <img src="assets/images/avatar1.jpg" alt="" class="avatar">
@@ -382,8 +491,8 @@
                                             <small class="text-muted">20 Mins</small>
                                         </div>
                                     </div>
-                                    <button class="btn btn-outline-secondary btn-sm align-self-start">
-                                        <i class="bi bi-plus-lg"></i>
+                                    <button class="btn-add button_extend">
+                                        <img src="assets/icons/Add_Icon_Wellth.png" alt="icon" class="img-fluid">
                                     </button>
                                 </div>
                             </div>
@@ -395,7 +504,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <!-- Card wrapper -->
                     <div class="card custom-card mx-auto">
                         <!-- image + heart -->
@@ -423,8 +532,9 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-1">
-                                <i class="bi bi-clock me-1"></i>
-                                <small class="text-muted">9AM–10PM, Mon – Sun</small>
+                                <p style="font-size: 12px;" class="text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>9AM–10PM, Mon – Sun
+                                </p>
                                 <div class="avatar-group ms-3">
                                     <img src="assets/images/avatar.png" alt="" class="avatar">
                                     <img src="assets/images/avatar1.jpg" alt="" class="avatar">
@@ -433,7 +543,7 @@
                             </div>
 
                             <!-- service detail pill -->
-                            <div class="service-pill p-3 mb-2 mt-2">
+                            <div class="service-pill p-2 m-2">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div>
                                         <h6 class="mb-1">Traditional Sauna</h6>
@@ -448,8 +558,8 @@
                                             <small class="text-muted">20 Mins</small>
                                         </div>
                                     </div>
-                                    <button class="btn btn-outline-secondary btn-sm align-self-start">
-                                        <i class="bi bi-plus-lg"></i>
+                                    <button class="btn-add button_extend">
+                                        <img src="assets/icons/Add_Icon_Wellth.png" alt="icon" class="img-fluid">
                                     </button>
                                 </div>
                             </div>
@@ -462,11 +572,11 @@
                     </div>
                 </div>
                 <!-- ------------- -->
-            </div>
+                <!-- </div> -->
 
-            <div class="row gx-4 gy-4 mt-1">
+                <!-- <div class="CardRowsAll mt-1"> -->
                 <!-- repeat this col for each card -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <!-- Card wrapper -->
                     <div class="card custom-card mx-auto">
                         <!-- image + heart -->
@@ -494,8 +604,9 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-1">
-                                <i class="bi bi-clock me-1"></i>
-                                <small class="text-muted">9AM–10PM, Mon – Sun</small>
+                                <p style="font-size: 12px;" class="text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>9AM–10PM, Mon – Sun
+                                </p>
                                 <div class="avatar-group ms-3">
                                     <img src="assets/images/avatar.png" alt="" class="avatar">
                                     <img src="assets/images/avatar1.jpg" alt="" class="avatar">
@@ -519,8 +630,8 @@
                                             <small class="text-muted">20 Mins</small>
                                         </div>
                                     </div>
-                                    <button class="btn btn-outline-secondary btn-sm align-self-start">
-                                        <i class="bi bi-plus-lg"></i>
+                                    <button class="btn-add button_extend">
+                                        <img src="assets/icons/Add_Icon_Wellth.png" alt="icon" class="img-fluid">
                                     </button>
                                 </div>
                             </div>
@@ -532,7 +643,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <!-- Card wrapper -->
                     <div class="card custom-card mx-auto">
                         <!-- image + heart -->
@@ -560,8 +671,9 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-1">
-                                <i class="bi bi-clock me-1"></i>
-                                <small class="text-muted">9AM–10PM, Mon – Sun</small>
+                                <p style="font-size: 12px;" class="text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>9AM–10PM, Mon – Sun
+                                </p>
                                 <div class="avatar-group ms-3">
                                     <img src="assets/images/avatar.png" alt="" class="avatar">
                                     <img src="assets/images/avatar1.jpg" alt="" class="avatar">
@@ -585,8 +697,8 @@
                                             <small class="text-muted">20 Mins</small>
                                         </div>
                                     </div>
-                                    <button class="btn btn-outline-secondary btn-sm align-self-start">
-                                        <i class="bi bi-plus-lg"></i>
+                                    <button class="btn-add button_extend">
+                                        <img src="assets/icons/Add_Icon_Wellth.png" alt="icon" class="img-fluid">
                                     </button>
                                 </div>
                             </div>
@@ -598,7 +710,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <!-- Card wrapper -->
                     <div class="card custom-card mx-auto">
                         <!-- image + heart -->
@@ -626,8 +738,9 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-1">
-                                <i class="bi bi-clock me-1"></i>
-                                <small class="text-muted">9AM–10PM, Mon – Sun</small>
+                                <p style="font-size: 12px;" class="text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>9AM–10PM, Mon – Sun
+                                </p>
                                 <div class="avatar-group ms-3">
                                     <img src="assets/images/avatar.png" alt="" class="avatar">
                                     <img src="assets/images/avatar1.jpg" alt="" class="avatar">
@@ -651,8 +764,8 @@
                                             <small class="text-muted">20 Mins</small>
                                         </div>
                                     </div>
-                                    <button class="btn btn-outline-secondary btn-sm align-self-start">
-                                        <i class="bi bi-plus-lg"></i>
+                                    <button class="btn-add button_extend">
+                                        <img src="assets/icons/Add_Icon_Wellth.png" alt="icon" class="img-fluid">
                                     </button>
                                 </div>
                             </div>
@@ -664,7 +777,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <!-- Card wrapper -->
                     <div class="card custom-card mx-auto">
                         <!-- image + heart -->
@@ -692,8 +805,9 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-1">
-                                <i class="bi bi-clock me-1"></i>
-                                <small class="text-muted">9AM–10PM, Mon – Sun</small>
+                                <p style="font-size: 12px;" class="text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>9AM–10PM, Mon – Sun
+                                </p>
                                 <div class="avatar-group ms-3">
                                     <img src="assets/images/avatar.png" alt="" class="avatar">
                                     <img src="assets/images/avatar1.jpg" alt="" class="avatar">
@@ -717,8 +831,8 @@
                                             <small class="text-muted">20 Mins</small>
                                         </div>
                                     </div>
-                                    <button class="btn btn-outline-secondary btn-sm align-self-start">
-                                        <i class="bi bi-plus-lg"></i>
+                                    <button class="btn-add button_extend">
+                                        <img src="assets/icons/Add_Icon_Wellth.png" alt="icon" class="img-fluid">
                                     </button>
                                 </div>
                             </div>
@@ -734,10 +848,10 @@
 
                 <!-- -------------------------- -->
 
-            </div>
-            <div class="row gx-4 gy-4 mt-1">
+                <!-- </div> -->
+                <!-- <div class="CardRowsAll mt-1"> -->
                 <!-- repeat this col for each card -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <!-- Card wrapper -->
                     <div class="card custom-card mx-auto">
                         <!-- image + heart -->
@@ -765,8 +879,9 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-1">
-                                <i class="bi bi-clock me-1"></i>
-                                <small class="text-muted">9AM–10PM, Mon – Sun</small>
+                                <p style="font-size: 12px;" class="text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>9AM–10PM, Mon – Sun
+                                </p>
                                 <div class="avatar-group ms-3">
                                     <img src="assets/images/avatar.png" alt="" class="avatar">
                                     <img src="assets/images/avatar1.jpg" alt="" class="avatar">
@@ -790,8 +905,8 @@
                                             <small class="text-muted">20 Mins</small>
                                         </div>
                                     </div>
-                                    <button class="btn btn-outline-secondary btn-sm align-self-start">
-                                        <i class="bi bi-plus-lg"></i>
+                                    <button class="btn-add button_extend">
+                                        <img src="assets/icons/Add_Icon_Wellth.png" alt="icon" class="img-fluid">
                                     </button>
                                 </div>
                             </div>
@@ -803,7 +918,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <!-- Card wrapper -->
                     <div class="card custom-card mx-auto">
                         <!-- image + heart -->
@@ -831,8 +946,9 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-1">
-                                <i class="bi bi-clock me-1"></i>
-                                <small class="text-muted">9AM–10PM, Mon – Sun</small>
+                                <p style="font-size: 12px;" class="text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>9AM–10PM, Mon – Sun
+                                </p>
                                 <div class="avatar-group ms-3">
                                     <img src="assets/images/avatar.png" alt="" class="avatar">
                                     <img src="assets/images/avatar1.jpg" alt="" class="avatar">
@@ -856,8 +972,8 @@
                                             <small class="text-muted">20 Mins</small>
                                         </div>
                                     </div>
-                                    <button class="btn btn-outline-secondary btn-sm align-self-start">
-                                        <i class="bi bi-plus-lg"></i>
+                                    <button class="btn-add button_extend">
+                                        <img src="assets/icons/Add_Icon_Wellth.png" alt="icon" class="img-fluid">
                                     </button>
                                 </div>
                             </div>
@@ -869,7 +985,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <!-- Card wrapper -->
                     <div class="card custom-card mx-auto">
                         <!-- image + heart -->
@@ -897,8 +1013,9 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-1">
-                                <i class="bi bi-clock me-1"></i>
-                                <small class="text-muted">9AM–10PM, Mon – Sun</small>
+                                <p style="font-size: 12px;" class="text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>9AM–10PM, Mon – Sun
+                                </p>
                                 <div class="avatar-group ms-3">
                                     <img src="assets/images/avatar.png" alt="" class="avatar">
                                     <img src="assets/images/avatar1.jpg" alt="" class="avatar">
@@ -922,8 +1039,8 @@
                                             <small class="text-muted">20 Mins</small>
                                         </div>
                                     </div>
-                                    <button class="btn btn-outline-secondary btn-sm align-self-start">
-                                        <i class="bi bi-plus-lg"></i>
+                                    <button class="btn-add button_extend">
+                                        <img src="assets/icons/Add_Icon_Wellth.png" alt="icon" class="img-fluid">
                                     </button>
                                 </div>
                             </div>
@@ -935,7 +1052,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <!-- Card wrapper -->
                     <div class="card custom-card mx-auto">
                         <!-- image + heart -->
@@ -963,8 +1080,9 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-1">
-                                <i class="bi bi-clock me-1"></i>
-                                <small class="text-muted">9AM–10PM, Mon – Sun</small>
+                                <p style="font-size: 12px;" class="text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>9AM–10PM, Mon – Sun
+                                </p>
                                 <div class="avatar-group ms-3">
                                     <img src="assets/images/avatar.png" alt="" class="avatar">
                                     <img src="assets/images/avatar1.jpg" alt="" class="avatar">
@@ -988,8 +1106,8 @@
                                             <small class="text-muted">20 Mins</small>
                                         </div>
                                     </div>
-                                    <button class="btn btn-outline-secondary btn-sm align-self-start">
-                                        <i class="bi bi-plus-lg"></i>
+                                    <button class="btn-add button_extend">
+                                        <img src="assets/icons/Add_Icon_Wellth.png" alt="icon" class="img-fluid">
                                     </button>
                                 </div>
                             </div>
@@ -1004,10 +1122,10 @@
 
                 <!-- ------------------------------- -->
 
-            </div>
-            <div class="row gx-4 gy-4 mt-1">
+                <!-- </div> -->
+                <!-- <div class="CardRowsAll mt-1"> -->
                 <!-- repeat this col for each card -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <!-- Card wrapper -->
                     <div class="card custom-card mx-auto">
                         <!-- image + heart -->
@@ -1035,8 +1153,9 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-1">
-                                <i class="bi bi-clock me-1"></i>
-                                <small class="text-muted">9AM–10PM, Mon – Sun</small>
+                                <p style="font-size: 12px;" class="text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>9AM–10PM, Mon – Sun
+                                </p>
                                 <div class="avatar-group ms-3">
                                     <img src="assets/images/avatar.png" alt="" class="avatar">
                                     <img src="assets/images/avatar1.jpg" alt="" class="avatar">
@@ -1060,8 +1179,8 @@
                                             <small class="text-muted">20 Mins</small>
                                         </div>
                                     </div>
-                                    <button class="btn btn-outline-secondary btn-sm align-self-start">
-                                        <i class="bi bi-plus-lg"></i>
+                                    <button class="btn-add button_extend">
+                                        <img src="assets/icons/Add_Icon_Wellth.png" alt="icon" class="img-fluid">
                                     </button>
                                 </div>
                             </div>
@@ -1073,7 +1192,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <!-- Card wrapper -->
                     <div class="card custom-card mx-auto">
                         <!-- image + heart -->
@@ -1101,8 +1220,9 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-1">
-                                <i class="bi bi-clock me-1"></i>
-                                <small class="text-muted">9AM–10PM, Mon – Sun</small>
+                                <p style="font-size: 12px;" class="text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>9AM–10PM, Mon – Sun
+                                </p>
                                 <div class="avatar-group ms-3">
                                     <img src="assets/images/avatar.png" alt="" class="avatar">
                                     <img src="assets/images/avatar1.jpg" alt="" class="avatar">
@@ -1126,8 +1246,8 @@
                                             <small class="text-muted">20 Mins</small>
                                         </div>
                                     </div>
-                                    <button class="btn btn-outline-secondary btn-sm align-self-start">
-                                        <i class="bi bi-plus-lg"></i>
+                                    <button class="btn-add button_extend">
+                                        <img src="assets/icons/Add_Icon_Wellth.png" alt="icon" class="img-fluid">
                                     </button>
                                 </div>
                             </div>
@@ -1139,7 +1259,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <!-- Card wrapper -->
                     <div class="card custom-card mx-auto">
                         <!-- image + heart -->
@@ -1167,8 +1287,9 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-1">
-                                <i class="bi bi-clock me-1"></i>
-                                <small class="text-muted">9AM–10PM, Mon – Sun</small>
+                                <p style="font-size: 12px;" class="text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>9AM–10PM, Mon – Sun
+                                </p>
                                 <div class="avatar-group ms-3">
                                     <img src="assets/images/avatar.png" alt="" class="avatar">
                                     <img src="assets/images/avatar1.jpg" alt="" class="avatar">
@@ -1192,8 +1313,8 @@
                                             <small class="text-muted">20 Mins</small>
                                         </div>
                                     </div>
-                                    <button class="btn btn-outline-secondary btn-sm align-self-start">
-                                        <i class="bi bi-plus-lg"></i>
+                                    <button class="btn-add button_extend">
+                                        <img src="assets/icons/Add_Icon_Wellth.png" alt="icon" class="img-fluid">
                                     </button>
                                 </div>
                             </div>
@@ -1205,7 +1326,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <!-- Card wrapper -->
                     <div class="card custom-card mx-auto">
                         <!-- image + heart -->
@@ -1233,8 +1354,9 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-1">
-                                <i class="bi bi-clock me-1"></i>
-                                <small class="text-muted">9AM–10PM, Mon – Sun</small>
+                                <p style="font-size: 12px;" class="text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>9AM–10PM, Mon – Sun
+                                </p>
                                 <div class="avatar-group ms-3">
                                     <img src="assets/images/avatar.png" alt="" class="avatar">
                                     <img src="assets/images/avatar1.jpg" alt="" class="avatar">
@@ -1258,8 +1380,8 @@
                                             <small class="text-muted">20 Mins</small>
                                         </div>
                                     </div>
-                                    <button class="btn btn-outline-secondary btn-sm align-self-start">
-                                        <i class="bi bi-plus-lg"></i>
+                                    <button class="btn-add button_extend">
+                                        <img src="assets/icons/Add_Icon_Wellth.png" alt="icon" class="img-fluid">
                                     </button>
                                 </div>
                             </div>
@@ -1280,15 +1402,15 @@
         </div>
     </section>
 
-    <button type="button" class="btn text-center d-flex m-auto ">See more</button>
+    <button type="button" class="btn btn-outline-secondary text-center d-flex m-auto ">See more</button>
 
     <!-- ======= Browse Your Favorite Facilities ======= -->
-    <section class="py-5">
-        <div class="p-5">
+    <section class="px-5">
+        <div class="">
             <h2 class="h4 mb-4">Browse your favorite facilities</h2>
-            <div class="row gx-4 gy-4">
+            <div class="CardRowsAll">
                 <!-- repeat this col for each facility -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <div class="card h-100 custom-card_facility shadow-sm">
                         <div class="position-relative">
                             <a href="Wellth.html"> <img src="assets/images/facilities1.png" class="card-img_facility"
@@ -1313,7 +1435,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <div class="card h-100 custom-card_facility shadow-sm">
                         <div class="position-relative">
                             <a href="Wellth.html"> <img src="assets/images/facilities0.png" class="card-img_facility"
@@ -1338,7 +1460,7 @@
                     </div>
                 </div>
                 <!-- repeat this col for each facility -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <div class="card h-100 custom-card_facility shadow-sm">
                         <div class="position-relative">
                             <a href="Wellth.html"> <img src="assets/images/facilities1.png" class="card-img_facility"
@@ -1363,7 +1485,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="">
                     <div class="card h-100 custom-card_facility shadow-sm">
                         <div class="position-relative">
                             <a href="Wellth.html"> <img src="assets/images/facilities0.png" class="card-img_facility"
@@ -1469,8 +1591,119 @@
     <!-- Bootstrap JS + Custom JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
     <script src="js/script.js"></script>
+    <script>
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const openBtns = document.querySelectorAll('.button_extend');
+            const panel = document.querySelector('.expanded-panel');
+            const cardwellth = document.querySelector('.cardwellth');
+            // const continueBtn = panel.querySelector('.continue-btn');
+            const bookLaterBtn = panel.querySelector('.book-later-btn');
+
+            // 1) Open on any .button_extend
+            openBtns.forEach(btn =>
+                btn.addEventListener('click', e => {
+                    e.stopPropagation();        // don’t let the document‑click close it immediately
+                    cardwellth.style.display='block';
+                    panel.classList.add('open');
+                })
+            );
+            
+            // 2) Close if clicking outside panel
+            document.addEventListener('click', e => {
+                if (!panel.contains(e.target)) {
+                    cardwellth.style.display='none';
+                    panel.classList.remove('open');
+                }
+            });
+            
+            // 3) “Book Later” closes panel
+            bookLaterBtn.addEventListener('click', e => {
+                e.stopPropagation();
+                cardwellth.style.display='none';
+                panel.classList.remove('open');
+            });
+
+            // 4) “Continue” redirects
+            // continueBtn.addEventListener('click', () => {
+            //     window.location.href = 'continue.html';
+            // });
+        });
+
+
+
+
+
+
+        // Date pill selection
+        document.querySelectorAll('.date-pill').forEach(pill => {
+            pill.addEventListener('click', () => {
+                document.querySelectorAll('.date-pill').forEach(d => d.classList.remove('selected'));
+                if (!pill.classList.contains('more')) pill.classList.add('selected');
+            });
+        });
+
+        // Time slot selection
+        document.querySelectorAll('.time-slot').forEach(slot => {
+            slot.addEventListener('click', () => {
+                document.querySelectorAll('.time-slot').forEach(s => s.classList.remove('selected'));
+                slot.classList.add('selected');
+            });
+        });
+
+
+
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const pill = document.getElementById('custom-date-pill');
+            const picker = document.getElementById('custom-date-input');
+
+            // init Flatpickr
+            flatpickr(picker, {
+                defaultDate: null,
+                allowInput: false,
+                clickOpens: false,
+                onChange: function (selectedDates, dateStr) {
+                    if (!dateStr) return;
+
+                    // parse and format
+                    const dt = selectedDates[0];
+                    const weekday = dt.toLocaleDateString('en-US', { weekday: 'short' }).toUpperCase();
+                    const month = dt.toLocaleDateString('en-US', { month: 'short' });
+                    const dayNum = dt.getDate().toString().padStart(2, '0');
+
+                    // update pill
+                    pill.dataset.day = `${weekday} ${month} ${dayNum}`;
+                    pill.innerHTML = `
+          <div class="day">${weekday}</div>
+          <small>${month} ${dayNum}</small>
+        `;
+                    pill.classList.add('selected');
+                },
+                onReady: function (_, __, fp) {
+                    // ensure container is positioned relative for our CSS to take effect
+                    fp.calendarContainer.style.setProperty('position', 'absolute');
+                }
+            });
+
+            // open the calendar when pill is clicked
+            pill.addEventListener('click', () => {
+                // toggle open/close
+                const isOpen = picker._flatpickr.isOpen;
+                if (isOpen) picker._flatpickr.close();
+                else picker._flatpickr.open();
+            });
+        });
+
+
+    </script>
+
 
 </body>
 

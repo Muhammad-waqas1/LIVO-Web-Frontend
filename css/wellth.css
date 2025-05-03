@@ -96,8 +96,8 @@ h2 {
 
 
 .categories {
-    display: inline-flex;
-    height: 109.011px;
+    /* display: inline-flex; */
+    /* height: 109.011px; */
     flex-direction: column;
     align-items: flex-start;
     gap: 23.105px;
@@ -108,7 +108,7 @@ h2 {
 
 .cat-list {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     /* keep everything on one line */
     width: 100%;
     /* fill the parent (usually viewport) */
@@ -123,7 +123,7 @@ h2 {
     -ms-overflow-style: none;
     /* IE 10+ */
 
-    gap: 17px;
+    gap: 14px;
 
 }
 
@@ -366,9 +366,9 @@ ul.session-nav.nav .nav-link {
 }
 
 #detail-card img.main-img {
-    width: 747px;
+    /* width: 747px; */
     height: 309px;
-    /* width: 100%; */
+    width: 100%;
     border-radius: 6px;
     margin-bottom: 1rem;
     object-fit: cover;
@@ -507,7 +507,14 @@ ul.session-nav.nav .nav-link {
     z-index: 2000 !important;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 890px) {
+
+    .flatpickr-calendar {
+        transform: translate(calc(100% + 50px), 70px) !important;
+
+    }
+}
+@media (max-width: 750px) {
 
     .flatpickr-calendar {
         transform: translate(calc(100% - 270px), 70px) !important;
@@ -916,7 +923,7 @@ ul.session-nav.nav .nav-link {
 /* ====== LAYOUT ====== */
 .team-section,
 .reviews-section {
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .section-title {
