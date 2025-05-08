@@ -693,7 +693,7 @@
                 </div>
 
                 <div class="Info_actions">
-                    <a href="service.html" id="Info_actions_button1" class="btn btn-outline-secondary" disabled>Continue</a>
+                    <button id="Info_actions_button1" class="btn btn-outline-secondary" disabled>Continue</button>
                     <button id="Info_actions_button2" class="btn btn-outline-secondary" disabled>
                         Book Later
                     </button>
@@ -1138,6 +1138,15 @@
                 else picker._flatpickr.open();
             });
         });
+
+
+        Info_actions_button1.addEventListener('click', e => {
+  // only fire when enabled
+  if (!Info_actions_button1.disabled) {
+    window.location.href = 'service.html';
+  }
+});
+
 
 
 

@@ -7,7 +7,10 @@
     <title>LIVO Home</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modals.css" />
 </head>
 
 <body>
@@ -35,8 +38,9 @@
                         <img src="assets/images/avatar.png" alt="User avatar" class="avatar_Profile rounded-circle">
                     </button>
                     <ul id="avatarMenu" class="dropdown-menu">
-                        <li><a class="dropdown-item fw-medium" href="#">Sign up</a></li>
-                        <li><a class="dropdown-item" href="#">Log in</a></li>
+                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
@@ -49,6 +53,174 @@
             </div>
         </div>
     </header>
+
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4" style="border-radius: 60px;">
+        <div class="modal-body p-5">
+          <h3 class="fw-bold mb-4">Book Your<br>Optimized Health!</h3>
+          <p class="mb-4">Create an account or log in to book and manage your appointments</p>
+          <form>
+            <div class="mb-4">
+              <input
+                type="email"
+                class="form-control custom-input"
+                placeholder="Enter your email"
+                required>
+            </div>
+            <button type="submit" class="btn btn-block w-100 btn-continue mb-3">Continue</button>
+          </form>
+          <div class="text-center small text-muted mb-3">Or</div>
+          <button class="btn btn-apple w-100 mb-2 d-flex align-items-center justify-content-center">
+            <i class="bi bi-apple fs-4 me-2"></i>Continue with Apple
+          </button>
+          <button class="btn btn-google w-100 d-flex align-items-center justify-content-center">
+            <i class="bi bi-google fs-4 me-2"></i>Continue with Google
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- Create Account Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4" style="border-radius: 30px;">
+        <div class="modal-body p-5">
+          <h5 class="fw-bold mb-2">Create Account!</h5>
+          <p class="text-muted mb-4">Create an account to book and manage your appointments on Livo.</p>
+          <form id="signupForm">
+              <div class="mb-3 mt-2">
+                <label class="form-label fw-bold">First Name</label>
+                <input type="text" class="form-control custom-input" placeholder="Enter your name" required>
+              </div>
+        
+            <div class="mb-3 mt-2">
+                <label class="form-label fw-bold">Last Name</label>
+                <input type="text" class="form-control custom-input" placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-3 mt-2">
+              <label class="form-label fw-bold">Email</label>
+              <input type="email" class="form-control custom-input" placeholder="Enter your email" required>
+            </div>
+  
+            <div class="mb-3 d-flex flex-column ">
+              <label class="form-label fw-bold">Phone No.</label>
+              <input
+                id="phone"
+                type="tel"
+                class="form-control custom-input"
+                placeholder="+971 …"
+                required>
+            </div>
+  
+            <div class="mb-3">
+              <label class="form-label fw-bold">Password</label>
+              <input type="password" class="form-control custom-input" placeholder="Enter your password" required>
+            </div>
+            <div class="mb-4">
+              <label class="form-label fw-bold">Confirm Password</label>
+              <input type="password" class="form-control custom-input" placeholder="Re-enter your password" required>
+            </div>
+  
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="checkbox" id="termsCheck" required>
+              <label class="form-check-label small" for="termsCheck">
+                I agree to the <a href="#" target="_blank" class="Sign_term_anchor fw-normal">Terms and conditions</a>
+              </label>
+            </div>
+  
+            <button type="submit" class="btn w-100 btn-signup mb-3 fw-bold">Sign Up</button>
+          </form>
+  
+          <div class="text-center">
+            <small class="text-muted">
+              Already have an account?
+              <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal" class="Signin_anchor fw-bold">Sign In</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- Verification Code Modal -->
+<div class="modal fade" id="verifyModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4" style="border-radius: 30px;">
+        <div class="modal-body p-5">
+          <h5 class="fw-bold mb-4">
+            Enter the five digit code sent to you at<br>
+            <small class="text-muted">adaaj34@gmail.com</small>
+          </h5>
+  
+          <div class="d-flex justify-content-between mb-4 code-inputs">
+            <input type="text" inputmode="numeric" maxlength="1" class="form-control digit-input text-center">
+            <input type="text" inputmode="numeric" maxlength="1" class="form-control digit-input text-center">
+            <input type="text" inputmode="numeric" maxlength="1" class="form-control digit-input text-center">
+            <input type="text" inputmode="numeric" maxlength="1" class="form-control digit-input text-center">
+            <input type="text" inputmode="numeric" maxlength="1" class="form-control digit-input text-center">
+          </div>
+  
+          <div class="mb-4">
+            <small class="text-muted">
+              Didn’t receive the code?
+              <a href="#" id="resendCode">Resend</a>
+            </small>
+          </div>
+  
+          <button id="verifyBtn" class="btn w-100 btn-verify">Verify</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ <!--WelcomeBack Code Modal --> 
+  <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4" style="border-radius: 30px;">
+        <div class="modal-body p-5">
+          <h3 class="fw-bold mb-4">Welcome Back!</h3>
+          <p class="mb-4">Log in to explore services, book sessions, and manage your longevity journey.</p>
+          <form>
+            <div class="mb-3 mt-2">
+              <label class="form-label fw-bold">Email</label>
+              <input type="email" class="form-control custom-input" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Password</label>
+              <input type="password" class="form-control custom-input" placeholder="Enter your password" required>
+            </div>
+            <div class="mb-3">
+              <a href="#" class="Signin_anchor float-end">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn w-100 btn-continue mb-3">Log in</button>
+          </form>
+          <div class="text-center small text-muted mb-3">Or</div>
+          <button class="btn btn-apple w-100 mb-2 d-flex align-items-center justify-content-center">
+            <i class="bi bi-apple fs-4 me-2"></i>Continue with Apple
+          </button>
+          <button class="btn btn-google w-100 d-flex align-items-center justify-content-center">
+            <i class="bi bi-google fs-4 me-2"></i>Continue with Google
+          </button>
+          <div class="text-center mt-4">
+            <small class="text-muted">
+              Don’t have an account?
+              <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signupModal" class="Signin_anchor fw-bold">Sign Up</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 
     <!-- SEARCH BAR -->
     <section class="search-section mb-5 mt-4">
@@ -1595,9 +1767,11 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <script src="js/modals.js"></script>
     <script>
 
-
+        // expanded-panel JS 
         document.addEventListener('DOMContentLoaded', () => {
             const openBtns = document.querySelectorAll('.button_extend');
             const panel = document.querySelector('.expanded-panel');
@@ -1701,6 +1875,20 @@
             });
         });
 
+
+
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      initialCountry: "ae",
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+    });
+  });
 
     </script>
 
